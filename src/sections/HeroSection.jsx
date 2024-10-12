@@ -14,10 +14,10 @@ const images = [
     { src: "/assets/image2.jpeg", title: "Relax in Comfort", description: "Enjoy our well-furnished rooms with stunning views." },
     { src: "/assets/image3.jpeg", title: "Explore the Outdoors", description: "Adventure awaits with hiking, biking, and more." },
     { src: "/assets/image4.jpeg", title: "Unwind in Nature", description: "Take a break and enjoy serene surroundings." },
-    { src: "/assets/image10.jpeg", title: "Sunset Views ", description: "Witness stunning sunsets from your room" },
+    { src: "/assets/image8.jpeg", title: "Peaceful Escape ", description: " Relax in quiet, tranquil settings." },
     { src: "/assets/image9.jpeg", title: "Explore the Outdoors", description: "Savor delicious meals with stunning landscapes." },
     { src: "/assets/image7.jpeg", title: "Dine with a View", description: "Create unforgettable memories at Mossess Chalets." },
-    { src: "/assets/image11.jpeg", title: "Peaceful Escape", description: "Relax in quiet, tranquil settings." },
+    { src: "/assets/image11.jpeg", title: "Sunset Views ", description: "Witness stunning sunsets from your room" },
 ];
 
 export default function HeroSection() {

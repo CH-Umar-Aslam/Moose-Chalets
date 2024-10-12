@@ -75,7 +75,7 @@ export default function TestimonialSlider() {
                                 className="rounded-full aspect-auto object-cover mb-2 mx-auto"
                             />
                             <h3 className="text-xl font-semibold  text-white">{testimonial.name}</h3>
-                            <p className="text-gray-300 md:text-nowrap">{testimonial.feedback}</p>
+                            <p className="text-gray-300 text-sm p-2 md:text-nowrap">{testimonial.feedback}</p>
                         </SwiperSlide>
                     ))}
                 </Swiper>
