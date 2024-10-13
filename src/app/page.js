@@ -7,13 +7,15 @@ import React from 'react'
 
 function Home() {
   return (
-    <div>
-        <Navbar/>
+    <div className='bg-[#52503B] '>
+       <div className='2xl:container mx-auto'>
+       <Navbar/>
         <HeroSection/>
         <Testimonials/>
         <ContactForm/>
         <Footer/>
 
+       </div>
 
     </div>
   )
