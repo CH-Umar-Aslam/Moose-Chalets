@@ -30,7 +30,7 @@ export default function Navbar() {
             e.preventDefault(),
             scrollTo("hero-section")}}  href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           {/* <Image src={Logo} height={40} width={40} className="h-8 object-cover" alt="Mossess Chalets Logo" /> */}
-          <span className="self-center  text-2xl font-semibold whitespace-nowrap dark:text-white">Moose Chalets</span>
+          <span className="self-center  text-2xl font-semibold whitespace-nowrap dark:text-white">Moose Chalet</span>
         </Link>
 
         {/* Desktop Menu */}
@@ -72,7 +72,7 @@ export default function Navbar() {
           <div className="flex justify-between w-full">
             <Link  onClick={(e)=> {
             e.preventDefault(),
-            scrollTo("hero-section")}} href="#" className="text-2xl font-semibold text-white">Mossess Chalets</Link>
+            scrollTo("hero-section")}} href="#" className="text-2xl font-semibold text-white">Mossess Chalet</Link>
             <button
               onClick={toggleMenu}
               className="text-white hover:bg-gray-700 rounded p-2"

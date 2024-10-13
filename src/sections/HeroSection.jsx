@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 
 const images = [
-    { src: "/assets/image.png", title: "Welcome to Moose Chalets", description: "Experience the beauty of nature and luxury in one place." },
+    { src: "/assets/image.png", title: "Welcome to Moose Chalet", description: "Experience the beauty of nature and luxury in one place." },
     { src: "/assets/image5.jpeg", title: "Luxurious Rooms with Stunning Views", description: "Discover the rich heritage and traditions." },
  
     { src: "/assets/image2.jpeg", title: "Relax in Comfort", description: "Enjoy our well-furnished rooms with stunning views." },
@@ -26,7 +26,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <div id="hero-section" className="relative w-full h-screen">
+        <div   id="hero-section" className="relative w-full h-screen">
             <Swiper
                 modules={[ Pagination, Autoplay,Navigation]} // Include Autoplay module
                 navigation={{
@@ -38,7 +38,7 @@ export default function HeroSection() {
                 className="h-full"
             >
                 {images.map((image, index) => (
-                    <SwiperSlide k  ey={index} className="relative h-full">
+                    <SwiperSlide key={index} className="relative h-full">
                         <Image
                             width={2680} // Set width
                            height={1280} // Set height
@@ -46,12 +46,12 @@ export default function HeroSection() {
                            priority // Load this image with high priority
                            src={image.src}
                             alt={image.title}
-                            className="w-full h-full object-center sm:object-cover"
+                            className="w-full h-full object-cover"
                             
                         />
                         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col  justify-center sm:items-center text-white p-4">
-                            <h2 className="text-3xl sm:text-4xl  font-bold mb-2 t">{image.title}</h2>
-                            <p className="text-lg">{image.description}</p>
+                            <h2 className="text-2xl sm:text-4xl  font-bold mb-2 t">{image.title}</h2>
+                            <p className="text-base sm:text-lg">{image.description}</p>
                         </div>
                     </SwiperSlide>
                 ))}

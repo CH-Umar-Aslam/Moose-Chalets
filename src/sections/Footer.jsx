@@ -7,16 +7,17 @@ export default function Footer() {
             <div className="container mx-auto flex flex-col sm:flex-row justify-between items-start">
                 <div className="flex flex-col items-start mb-4 sm:mb-0">
                     <h4 className="text-xl font-semibold">Contact Us</h4>
-                    <p className="mb-1">123 Moose Chalets</p>
-                    <p className="mb-1">Hunza Valley</p>
+                    <p className="mb-1 ">Moose Chalet Karimabad</p>
+                   
+                    <p className="">Hunza Valley</p>
                     <p>
                         Email: 
-                        <a href="mailto:info@mossesschalets.com" className="text-gray-200 hover:underline ml-1">info@moosechalets.com</a>
+                        <a href="mailto:info@mossesschalets.com" className="text-gray-200 hover:underline ml-1">info@moosechalet.com</a>
                     </p>
                 </div>
 
-                <div className="text-sm text-center mb-4 sm:mb-0">
-                    © 2024 Mooese Chalets. All rights reserved.
+                <div className="text-xs sm:text-sm sm:text-center mb-4 sm:mb-0">
+                    © 2024 Mooese Chalet. All rights reserved.
                 </div>
 
               
