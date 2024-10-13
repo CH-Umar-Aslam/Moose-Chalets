@@ -38,15 +38,15 @@ export default function HeroSection() {
                 className="h-full"
             >
                 {images.map((image, index) => (
-                    <SwiperSlide key={index} className="relative h-full">
+                    <SwiperSlide k  ey={index} className="relative h-full">
                         <Image
-                           width={1920} // Set width
-                           height={1080} // Set height
-                           layout="relative" // Makes the image responsive
+                            width={2680} // Set width
+                           height={1280} // Set height
+                  
                            priority // Load this image with high priority
-                            src={image.src}
+                           src={image.src}
                             alt={image.title}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-fill sm:object-cover"
                             
                         />
                         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col  justify-center sm:items-center text-white p-4">

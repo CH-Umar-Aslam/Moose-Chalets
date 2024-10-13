@@ -6,15 +6,9 @@ import "swiper/css/pagination"; // Import Pagination styles
 import { Pagination, Autoplay } from "swiper/modules"; // Import necessary modules
 import { FaStar, FaArrowRight } from "react-icons/fa"; // Import stars and arrow icon from react-icons
 import Link from "next/link";
+import Image from "next/image";
 
 const testimonials = [
-    {
-        src: "/assets/image1.jpeg",
-        name: "Ahsan Ilyas",
-        feedback: "Great location, just a 2-minute walk to Karimabad market. Beautiful atmosphere and amazing views. Friendly and helpful staff. The hotel is clean, stylish, and spacious with excellent service. Good food, great value for money, and very comfortable rooms. I truly enjoyed my stay and hope to return for a longer visit.",
-        date: "1 month ago",
-        rating: 5,
-    },
     {
         src: "/assets/image2.jpeg",
         name: "Việt Hoàng Phạm",
@@ -33,6 +27,13 @@ const testimonials = [
         src: "/assets/image4.jpeg",
         name: "Nikhil Satiani",
         feedback: "Located in a quiet neighborhood, just a 5-10 minute walk from the market. The rooms are well-designed, clean, and have constant electricity and hot water. Amazing views, and Nazir bhai is an excellent host who creates a welcoming atmosphere. 10/10 recommend.",
+        date: "1 month ago",
+        rating: 5,
+    },
+    {
+        src: "/assets/image1.jpeg",
+        name: "Ahsan Ilyas",
+        feedback: "Great location, just a 2-minute walk to Karimabad market. Beautiful atmosphere and amazing views. Friendly and helpful staff. The hotel is clean, stylish, and spacious with excellent service. Good food, great value for money, and very comfortable rooms. I truly enjoyed my stay and hope to return for a longer visit.",
         date: "1 month ago",
         rating: 5,
     },
@@ -59,7 +60,7 @@ export default function TestimonialSlider() {
     return (
         <div className="pt-10 pb-10 border-t-2" id="testimonials" style={{ backgroundColor: "#52503B" }}>
             <div className="mx-3 sm:mx-16">
-                <h2 className="text-xl sm:text-3xl  text-center pt-14 text-white font-bold sm:mb-8">What Our Guests Say</h2>
+                <h2 className="text-2xl sm:text-3xl  text-center pt-12 text-white font-bold sm:mb-8">What Our Guests Say</h2>
                 <div className="relative">
                     <Swiper
                         modules={[Pagination, Autoplay]}
@@ -88,8 +89,15 @@ export default function TestimonialSlider() {
                     >
                         {testimonials.map((testimonial, index) => (
                             <SwiperSlide key={index} className="flex flex-col items-center text-center py-6 transition-transform duration-300 hover:scale-105 bg-[#52503B] rounded-lg shadow-lg" style={{ height: '300px' }}>
-                                <h3 className="text-lg sm:text-xl font-semibold text-white">{testimonial.name}</h3>
-                                <p className="text-gray-300 text-sm p-2">{testimonial.feedback}</p>
+                                <Image
+                                    src={testimonial.src}
+                                    alt={testimonial.name}
+                                    width={100} // Adjusted for better visibility
+                                    height={100} // Adjusted for better visibility
+                                    className="rounded-full aspect-auto object-cover mb-2 mx-auto"
+                                />
+                                <i className="text-lg sm:text-xl font-semibold text-white">{testimonial.name}</i>
+                                <p className="text-gray-300 text-justify text-sm p-2">{testimonial.feedback}</p>
                                 <div className="flex justify-center">
                                     <StarRating rating={testimonial.rating} />
                                 </div>
