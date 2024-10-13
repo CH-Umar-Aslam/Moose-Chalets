@@ -12,7 +12,7 @@ const images = [
     { src: "/assets/image5.jpeg", title: "Luxurious Rooms with Stunning Views", description: "Discover the rich heritage and traditions." },
  
     { src: "/assets/image2.jpeg", title: "Relax in Comfort", description: "Enjoy our well-furnished rooms with stunning views." },
-    { src: "/assets/image3.jpeg", title: "Explore the Outdoors", description: " Savor delicious meals with stunning landscapes." },
+    { src: "/assets/image3.jpeg", title: "Explore Stunning Views", description: " Savor delicious meals with stunning landscapes." },
     { src: "/assets/image4.jpeg", title: "Unwind in Nature", description: "Take a break and enjoy serene surroundings." },
     { src: "/assets/image8.jpeg", title: "Peaceful Escape ", description: " Relax in quiet, tranquil settings." },
     { src: "/assets/image9.jpeg", title: "Explore the Outdoors", description: "Adventure awaits with hiking, biking, and more." },
@@ -46,7 +46,7 @@ export default function HeroSection() {
                            priority // Load this image with high priority
                            src={image.src}
                             alt={image.title}
-                            className="w-full h-full object-fill sm:object-cover"
+                            className="w-full h-full object-center sm:object-cover"
                             
                         />
                         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col  justify-center sm:items-center text-white p-4">
