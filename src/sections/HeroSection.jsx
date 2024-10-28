@@ -57,12 +57,11 @@ const images = [
 ];
 
 export default function HeroSection() {
-  useEffect(() => {
-    // Additional Swiper setup can be done here if needed
-  }, []);
-
   return (
-    <div id="hero-section" className="relative w-full h-screen">
+    <div
+      id="hero-section"
+      className="relative bg-sectionBackground w-full h-screen"
+    >
       <Swiper
         modules={[Pagination, Autoplay, Navigation]} // Include Autoplay module
         navigation={{

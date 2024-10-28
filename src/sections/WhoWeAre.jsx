@@ -3,7 +3,7 @@ import React from "react";
 import AboutSection from "../../public/assets/about-section.svg";
 const WhoWeAre = () => {
   return (
-    <section className="bg-gray-100 py-12">
+    <section id="about" className="bg-gray-100 py-12">
       <div className="container mx-auto  px-4 sm:px-4   text-justify md:text-center">
         <h2 className="text-4xl  font-Poppins font-bold mb-6 text-heading">
           Who We Are?

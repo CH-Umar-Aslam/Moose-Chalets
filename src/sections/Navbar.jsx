@@ -40,6 +40,16 @@ export default function Navbar() {
           <Link
             onClick={(e) => {
               e.preventDefault();
+              scrollTo("about");
+            }}
+            href="#"
+            className="block py-2 px-3 text-gray-800 rounded hover:bg-heading hover:text-white"
+          >
+            About
+          </Link>
+          <Link
+            onClick={(e) => {
+              e.preventDefault();
               scrollTo("testimonials");
             }}
             href="#"
@@ -48,11 +58,16 @@ export default function Navbar() {
             Testimonials
           </Link>
           <Link
+            onClick={(e) => {
+              e.preventDefault();
+              scrollTo("services");
+            }}
             href="#"
             className="block py-2 px-3 text-gray-800 rounded hover:bg-heading hover:text-white"
           >
-            Our History
+            Services
           </Link>
+
           <Link
             onClick={(e) => {
               e.preventDefault();
@@ -140,18 +155,32 @@ export default function Navbar() {
           <Link
             onClick={(e) => {
               e.preventDefault();
+              scrollTo("about");
+            }}
+            href="#"
+            className="block py-2 px-3 text-white rounded hover:bg-subHeading w-full text-left"
+          >
+            About
+          </Link>
+          <Link
+            onClick={(e) => {
+              e.preventDefault();
+              scrollTo("services");
+            }}
+            href="#"
+            className="block py-2 px-3 text-white rounded hover:bg-subHeading w-full text-left"
+          >
+            Services
+          </Link>
+          <Link
+            onClick={(e) => {
+              e.preventDefault();
               scrollTo("testimonials");
             }}
             href="#"
             className="block py-2 px-3 text-white rounded hover:bg-subHeading w-full text-left"
           >
             Testimonials
-          </Link>
-          <Link
-            href="#"
-            className="block py-2 px-3 text-white rounded hover:bg-subHeading w-full text-left"
-          >
-            Our History
           </Link>
 
           <Link

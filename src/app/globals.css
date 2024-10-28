@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.testimonial-slider {
+  background-color: #52503b;
+  padding: 40px;
+}
+
+.testimonial-slider .swiper-slide {
+  background-color: #fff;
+  padding: 20px;
+}

@@ -1,33 +1,78 @@
-"use client"
-import Link from "next/link";
+import React from "react";
+import Image from "next/image";
+import { IoLocationSharp } from "react-icons/io5";
+import { CgMail } from "react-icons/cg";
+import { FaPhoneAlt } from "react-icons/fa";
+import { TiSocialFacebook } from "react-icons/ti";
+import { SlSocialInstagram } from "react-icons/sl";
+import { FaWhatsapp } from "react-icons/fa";
 
-export default function Footer() {
-    return (
-        <footer className="bg-[#3B3A2B] text-gray-300 py-6 px-4 sm:px-12">
-            <div className="container mx-auto flex flex-col sm:flex-row justify-between items-start">
-                <div className="flex flex-col items-start mb-4 sm:mb-0">
-                    <h4 className="text-xl font-semibold">Contact Us</h4>
-                    <p className="mb-1 ">Moose Chalet Karimabad</p>
-                   
-                    <p className="">Hunza Valley</p>
-                    <p>
-                        Email: 
-                        <a href="mailto:info@mossesschalets.com" className="text-gray-200 hover:underline ml-1">info@moosechalet.com</a>
-                    </p>
-                </div>
+const Footer = () => {
+  return (
+    <div
+      className="relative w-full text-white"
+      style={{
+        backgroundImage: `url('/assets/image.png')`, // Directly reference the image path
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* Overlay to control opacity of content while keeping the background image fully visible */}
+      <div className="bg-[#123a1a] opacity-90 py-12 px-6 md:px-12 flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
+        {/* About Section */}
+        <div className="flex-1">
+          <h2 className="text-lg font-semibold  border-l-[7px] p-[10px] border-[#19F745]">
+            Stunning Valley Views
+          </h2>
+          <p className="mt-4 ml-2 text-sm">
+            Modern amenities and exceptional service, all designed to offer you
+            a peaceful and memorable stay in the heart of nature.
+          </p>
+          <div className="mt-6 flex text-xl space-x-4 ml-2">
+            <TiSocialFacebook />
+            <SlSocialInstagram />
+            <FaWhatsapp />
+          </div>
+        </div>
 
-                <div className="text-xs sm:text-sm sm:text-center mb-4 sm:mb-0">
-                    © 2024 Mooese Chalet. All rights reserved.
-                </div>
+        {/* Quick Links Section */}
+        <div className="flex-1">
+          <h2 className="text-lg border-l-[7px] p-[10px] border-[#19F745] font-semibold">
+            Quick Links
+          </h2>
+          <ul className="mt-4 ml-2 space-y-2 text-sm">
+            <li>Home</li>
+            <li>Rooms</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
 
-              
+        {/* Contact Information Section */}
+        <div className="flex-1">
+          <h2 className="text-lg font-semibold  border-l-[7px] p-[10px] border-[#19F745]">
+            Contact Information
+          </h2>
+          <ul className="mt-4 ml-2 space-y-2 text-sm">
+            <li className="flex items-center gap-2">
+              <FaPhoneAlt className="text-lg" /> +92-311-1122321
+            </li>
+            <li className="flex items-center gap-2">
+              <CgMail className="text-lg" /> hunza.valley@gmail.com
+            </li>
+            <li className="flex items-center gap-2">
+              <IoLocationSharp className="text-lg" /> Bungalow no. 04, Tulsa
+              Road, Hunza Valley, 46602
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="bg-[#123a1a] border-t-2  opacity-95 text-center py-4 text-sm">
+        Copyright © 2024 Moose Chalet. All rights reserved.
+      </div>
+    </div>
+  );
+};
 
-                    <div className="flex space-x-4">
-                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:underline transition duration-300">Facebook</a>
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:underline transition duration-300">Instagram</a>
-                    </div>
-                </div>
-        
-        </footer>
-    );
-}
+export default Footer;
