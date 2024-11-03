@@ -18,6 +18,7 @@ function Home() {
       <RoomCategories />
       <Testimonials />
       <ContactForm />
+
       <Footer />
     </div>
   );

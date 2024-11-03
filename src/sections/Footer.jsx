@@ -8,9 +8,13 @@ import { SlSocialInstagram } from "react-icons/sl";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
+  // 2297555a-df5e-4fa7-bca1-db8d82781251
+  //  b4a88e54-d1b9-4347-9fbe-4da3e31a9fd6
+
   return (
     <div
-      className="relative w-full text-white"
+      id="footer"
+      className="relative  w-full text-white"
       style={{
         backgroundImage: `url('/assets/image.png')`, // Directly reference the image path
         backgroundSize: "cover",
@@ -19,7 +23,7 @@ const Footer = () => {
       }}
     >
       {/* Overlay to control opacity of content while keeping the background image fully visible */}
-      <div className="bg-[#123a1a] opacity-90 py-12 px-6 md:px-12 flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
+      <div className="bg-[#123a1a]  opacity-90 py-16 px-6 md:px-12 flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
         {/* About Section */}
         <div className="flex-1">
           <h2 className="text-lg font-semibold  border-l-[7px] p-[10px] border-[#19F745]">
@@ -68,7 +72,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="bg-[#123a1a] border-t-2  opacity-95 text-center py-4 text-sm">
+      <div className="bg-[#123a1a] border-t-2  opacity-95 text-center py-6 text-sm">
         Copyright © 2024 Moose Chalet. All rights reserved.
       </div>
     </div>

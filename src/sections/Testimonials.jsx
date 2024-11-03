@@ -19,7 +19,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    src: "/assets/testimonial1.png",
+    src: "/assets/testimonial4.png",
     name: "Fatik Owais",
     feedback:
       "Stunning views with a European vibe—this hidden gem is a must-visit. Friendly host, simple breakfast, and despite occasional off-season electricity issues, it's a fantastic spot to enjoy Hunza.",
@@ -27,7 +27,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    src: "/assets/testimonial1.png",
+    src: "/assets/testimonial2.png",
     name: "Nikhil Satiani",
     feedback:
       "Quiet neighborhood, minutes from the market. Clean, stylish rooms with reliable amenities and amazing views. Nazir bhai’s hospitality makes it a 10/10 experience!",
@@ -35,7 +35,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    src: "/assets/testimonial1.png",
+    src: "/assets/testimonial3.png",
     name: "Ahsan Ilyas",
     feedback:
       "Great location, just a 2-minute walk to Karimabad market. Beautiful atmosphere, amazing views, and friendly staff. Clean, stylish, and spacious with excellent service. I enjoyed my stay and hope to return.",
@@ -43,8 +43,8 @@ const testimonials = [
     rating: 5,
   },
   {
-    src: "/assets/testimonial1.png",
-    name: "Elena Fulgoi",
+    src: "/assets/testimonial5.png",
+    name: "altan Fulgoi",
     feedback:
       "One of the best places I stayed at. The warmth of the hosts, attention to detail, and the chalet’s quality made my stay memorable. Bonus: stunning views and a playful, intelligent pet.",
     date: "4 weeks ago",
@@ -71,7 +71,7 @@ export default function TestimonialSlider() {
   return (
     <div className=" bg-white text-black" id="testimonials">
       <div className="container mx-auto px-4 sm:px-16">
-        <h2 className="text-3xl mt-12 text-center  font-bold text-black mb-6">
+        <h2 className="text-3xl mt-16 text-center  font-bold text-heading mb-6">
           What Our Guests Say
         </h2>
         <div className="relative">
@@ -122,7 +122,7 @@ export default function TestimonialSlider() {
           </Swiper>
         </div>
         <div className="flex justify-end mt-6">
-          <Link href="https://www.google.com/maps/place/Moose+Chalet">
+          <Link href="https://www.google.com/maps/place/Moose+Chalet/@36.3279221,74.6614297,17z/data=!3m1!4b1!4m12!1m5!8m4!1e2!2s115105778246777721829!3m1!1e1!3m5!1s0x38e8a1d8a2cc36d5:0x2d5354c3daa734a5!8m2!3d36.3279178!4d74.6640046!16s%2Fg%2F11t86ykpjt?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D">
             <button className="flex items-center text-black bg-yellow-500 hover:bg-yellow-600 font-semibold py-2 px-4 rounded">
               View Google Reviews <FaArrowRight className="ml-2" />
             </button>

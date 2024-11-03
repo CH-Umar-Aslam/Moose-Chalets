@@ -3,9 +3,12 @@ import React from "react";
 import AboutSection from "../../public/assets/about-section.svg";
 const WhoWeAre = () => {
   return (
-    <section id="about" className="bg-gray-100 py-12">
-      <div className="container mx-auto  px-4 sm:px-4   text-justify md:text-center">
-        <h2 className="text-4xl  font-Poppins font-bold mb-6 text-heading">
+    <section className="bg-gray-100 ">
+      <div
+        id="about"
+        className="container mx-auto pt-16 md:pb-12 px-4 sm:px-4   text-justify md:text-center"
+      >
+        <h2 className="text-3xl md:text-4xl text-center font-Poppins font-bold mb-6 text-heading">
           Who We Are?
         </h2>
         <p className=" text-base md:text-lg text-paragraph max-w-7xl mx-auto">

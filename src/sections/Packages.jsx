@@ -2,6 +2,7 @@
 import React from "react";
 import Room1 from "../../public/assets/room-catig1.jpeg";
 import Room2 from "../../public/assets/image5.jpeg";
+import Room3 from "../../public/assets/Room4.jpeg";
 import Image from "next/image";
 
 function RoomCard({
@@ -54,15 +55,15 @@ function RoomCard({
 
 function RoomCategories() {
   return (
-    <div className="container mx-auto px-4 my-8  md:my-16">
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
+    <div className="container place-items-center px-4 my-12  md:my-16">
+      <h1 className="text-3xl text-center  font-bold  text-heading mb-8">
         Room Categories and Tariffs
       </h1>
       <p className="text-center text-gray-600 mb-12">
         Explore our range of rooms, each thoughtfully designed with unique
         amenities to ensure a comfortable and memorable stay.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className=" grid grid-cols-1 place- md:grid-cols-2 lg:grid-cols-3 gap-6">
         <RoomCard
           title="King Bed Room"
           description="Enjoy panoramic valley views from a spacious king-size bed room, complete with a private balcony and Jacuzzi."
@@ -94,9 +95,9 @@ function RoomCategories() {
           ]}
         />
         <RoomCard
-          title="Valley View Suite"
+          title="First Floor Room"
           description="An elegant suite with stunning valley views, king-size bed, private balcony, and Jacuzzi for a luxurious stay."
-          roomImage={Room1}
+          roomImage={Room3}
           price="Rs. 13,000 per night"
           buttonText="Book Now"
           services={[

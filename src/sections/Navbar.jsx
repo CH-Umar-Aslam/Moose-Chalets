@@ -71,7 +71,7 @@ export default function Navbar() {
           <Link
             onClick={(e) => {
               e.preventDefault();
-              scrollTo("contact");
+              scrollTo("footer");
             }}
             href="#"
             className="block py-2 px-3 text-gray-800 rounded hover:bg-heading hover:text-white"
@@ -81,12 +81,20 @@ export default function Navbar() {
         </div>
 
         {/* Book Now Button on the right */}
-        <button
-          type="button"
-          className="hidden md:block bg-heading hover:bg-subHeading text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2"
+        <Link
+          onClick={(e) => {
+            e.preventDefault();
+            scrollTo("contact");
+          }}
+          href="#"
         >
-          Book Now
-        </button>
+          <button
+            type="button"
+            className="hidden md:block bg-heading hover:bg-subHeading text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2"
+          >
+            Book Now
+          </button>
+        </Link>
 
         {/* Hamburger button for mobile */}
         <button
@@ -186,19 +194,28 @@ export default function Navbar() {
           <Link
             onClick={(e) => {
               e.preventDefault();
-              scrollTo("contact");
+              scrollTo("footer");
             }}
             href="#"
             className="block py-2 px-3 text-white rounded hover:bg-subHeading w-full text-left"
           >
             Contact
           </Link>
-          <button
-            type="button"
-            className="border-2 border-green-400    hover:bg-subHeading focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 w-full text-center text-white"
+          <Link
+            className="w-full"
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollTo("contact");
+            }}
           >
-            Book Now
-          </button>
+            <button
+              type="button"
+              className="border-2  border-green-400    hover:bg-subHeading focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 w-full text-center text-white"
+            >
+              Book Now
+            </button>
+          </Link>
         </div>
       </div>
     </nav>

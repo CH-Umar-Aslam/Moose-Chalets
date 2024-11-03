@@ -118,7 +118,7 @@ export default function Services() {
             </div>
 
             <div className="md:w-1/2 sm:p-4">
-              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[10px] p-2 md:p-4 xl:p-5 border-heading">
+              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[10px] p-2 md:p-4 xl:p-5 border-heading text-subHeading">
                 Mountain-Facing Rooms
               </h2>
               <p className="text-[14px]  md:text-base md:mt-5 lg:leading-[150%] lg:text-xl  pl-2 md:pl-5 text-paragraph mb-4 text-justify ">
@@ -141,7 +141,7 @@ export default function Services() {
         <div>
           <div className="flex flex-col-reverse md:flex-row  gap-4 xl:gap-6">
             <div className="md:w-1/2 sm:p-4">
-              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[10px] p-2 md:p-4 xl:p-5 border-heading">
+              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[10px] p-2 md:p-4 xl:p-5 border-heading text-subHeading">
                 Embrace Nature's Beauty
               </h2>
               <p className="text-[14px]  md:text-base md:mt-5 lg:leading-[150%] lg:text-xl  pl-2 md:pl-5 text-paragraph mb-4 text-justify ">
@@ -183,7 +183,7 @@ export default function Services() {
             </div>
 
             <div className="md:w-1/2 sm:p-4">
-              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[10px] p-2 md:p-4 xl:p-5 border-heading">
+              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[10px] p-2 md:p-4 xl:p-5 border-heading text-subHeading">
                 Savor Exquisite Cuisine
               </h2>
               <p className="text-[14px]  md:text-base md:mt-5 lg:leading-[150%] lg:text-xl  pl-2 md:pl-5 text-paragraph mb-4 text-justify ">
@@ -206,7 +206,7 @@ export default function Services() {
         <div>
           <div className="flex flex-col-reverse md:flex-row  gap-4 xl:gap-6">
             <div className="md:w-1/2 sm:p-4">
-              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[10px] p-2 md:p-4 xl:p-5 border-heading">
+              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[10px] p-2 md:p-4 xl:p-5 border-heading text-subHeading">
                 Pristine Cleanliness
               </h2>
               <p className="text-[14px]  md:text-base md:mt-5 lg:leading-[150%] lg:text-xl  pl-2 md:pl-5 text-paragraph mb-4 text-justify ">
