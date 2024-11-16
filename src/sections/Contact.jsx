@@ -99,9 +99,7 @@ const ContactForm = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleOpenModal = () => {
-    setIsModalOpen(true);
-  };
+ 
 
   return (
     <div id="contact" className="container mx-auto px-4 py-24">
@@ -303,14 +301,7 @@ const ContactForm = () => {
               />
             </div>
           )}
-          <div className="w-full">
-            <button
-              onClick={handleOpenModal}
-              className=" bg-gray-100 border border-gray-800 w-full text-heading font-bold py-2  px-6 rounded-lg shadow-lg transition-transform transform hover:bg-gray-200 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50"
-            >
-              Read Note
-            </button>
-          </div>
+     
           <button
             type="submit"
             className="p-2 mt-1 py-2  px-6 rounded-lg bg-heading hover:bg-subHeading text-white font-bold text-xl"
@@ -323,6 +314,14 @@ const ContactForm = () => {
             </p>
           )}
         </form>
+           <div className="w-full">
+            <button
+              onClick={()=>setIsModalOpen(true)}
+              className=" bg-gray-100 border border-gray-800 w-full text-heading font-bold py-2  px-6 rounded-lg shadow-lg transition-transform transform hover:bg-gray-200 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50"
+            >
+              Read Note
+            </button>
+          </div>
 
         <div className=" max-w-3xl mx-auto justify-center items-center">
           <PaymentModal
