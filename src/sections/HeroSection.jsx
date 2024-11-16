@@ -78,7 +78,7 @@ export default function HeroSection() {
             loading="lazy"
               width={2680} // Set width
               height={1280} // Set height
-              priority // Load this image with high priority
+             
               src={image.src}
               alt={image.title}
               className="w-full h-full object-cover"
