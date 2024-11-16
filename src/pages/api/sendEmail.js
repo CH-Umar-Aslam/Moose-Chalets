@@ -67,7 +67,7 @@ const handler = async (req, res) => {
       };
 
       // Prepare email options for client
-      const clientMailOptions = {
+      const clientMailOptions = { 
         from: process.env.EMAIL_USER,
         to: email,
         subject: "Your Submission Details",

@@ -75,6 +75,7 @@ export default function HeroSection() {
         {images.map((image, index) => (
           <SwiperSlide key={index} className="relative h-full">
             <Image
+            loading="lazy"
               width={2680} // Set width
               height={1280} // Set height
               priority // Load this image with high priority
