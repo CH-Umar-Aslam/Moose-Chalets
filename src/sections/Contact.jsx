@@ -309,8 +309,9 @@ const ContactForm = () => {
             {loading ? "Loading..." : "Submit"}
           </button>
           {status && (
-            <p className="text-green-500 text-lg underline">
-              Conrats! Successfully Booked Your Slot{" "}
+            <p className="text-green-500 text-lg text-left">
+                Thank you for your booking! Your room has been successfully reserved. A confirmation email has been sent to your inbox with all the details. We look forward to welcoming you soon!
+
             </p>
           )}
         </form>
