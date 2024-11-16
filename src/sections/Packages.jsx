@@ -41,7 +41,7 @@ function RoomCard({
         </ul>
       </div>
       <div className="mt-6 flex justify-between items-center">
-        <span className="text-lg font-bold text-green-700">{price}</span>
+        <span className="text-sm sm:text-lg font-bold text-green-700">{price}</span>
         <button
           onClick={() => scrollTo("contact")}
           className="bg-heading hover:bg-subHeading text-white font-bold py-2 px-4 rounded-lg transition-all duration-200 ease-in-out transform hover:scale-105"
@@ -55,7 +55,7 @@ function RoomCard({
 
 function RoomCategories() {
   return (
-    <div className="container place-items-center px-4 my-12  md:my-16">
+    <div className="container mx-auto place-items-center px-4 my-12  md:my-16">
       <h1 className="text-3xl text-center  font-bold  text-heading mb-8">
         Room Categories and Tariffs
       </h1>

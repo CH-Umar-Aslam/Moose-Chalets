@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+
+import React, { useState, useEffect } from 'react';
 import PaymentModal from "./PaymentModal";
 
 const ContactForm = () => {
@@ -50,12 +51,7 @@ const ContactForm = () => {
     formData.append("guestCount", guestCount);
     formData.append("mattressOption", mattressOption);
     formData.append("date", date);
-    // if (Image) {
-    //   formData.append(
-    //     "attachments",
-    //     JSON.stringify([{ filename: Image.name, content: Image }])
-    //   );
-    // }
+
     if (image) {
       formData.append("attachment", image); // Attach the image file
     }
@@ -66,11 +62,13 @@ const ContactForm = () => {
 
     setLoading(false);
 
-    if (response.status == 200) {
+    if (response.status === 200) {
       setStatus(true);
       setTimeout(() => {
         setStatus(false);
-      }, 7000); // 4000 ms delay
+      }, 8000); // Close modal after 8 seconds
+    } else {
+      alert("Something went wrong, please try again.");
     }
 
     setName("");
@@ -289,7 +287,7 @@ const ContactForm = () => {
                 htmlFor="image"
                 className="block text-heading font-bold mb-2"
               >
-                Upload Image <span className="text-red-500">*</span> (max 2MB)
+                  Upload Transaction Snapshot <span className="text-red-500">*</span> (max 2MB)
               </label>
               <input
                 type="file"
@@ -308,20 +306,18 @@ const ContactForm = () => {
           >
             {loading ? "Loading..." : "Submit"}
           </button>
-          {status && (
-            <p className="text-green-500 text-lg text-left">
-                Thank you for your booking! Your room has been successfully reserved. A confirmation email has been sent to your inbox with all the details. We look forward to welcoming you soon!
-
-            </p>
-          )}
+          
         </form>
-           <div className="w-full">
+           <div className=" my-3 max-w-4xl mx-auto">
             <button
               onClick={()=>setIsModalOpen(true)}
-              className=" bg-gray-100 border border-gray-800 w-full text-heading font-bold py-2  px-6 rounded-lg shadow-lg transition-transform transform hover:bg-gray-200 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50"
+              className=" bg-gray-100   border border-gray-800 w-full text-heading font-bold py-2  px-6 rounded-lg shadow-lg transition-transform transform hover:bg-gray-200 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50"
             >
               Read Note
             </button>
+{         status   && <BookingConfirmation  />} 
+
+
           </div>
 
         <div className=" max-w-3xl mx-auto justify-center items-center">
@@ -337,3 +333,35 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
+
+
+
+
+
+const BookingConfirmation = () => {
+  
+  return (
+    <div>
+   
+    <div className="fixed inset-0 bg-gray-700 bg-opacity-50 flex justify-center items-center z-50">
+      <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
+        <h3 className="text-lg font-semibold text-gray-800">Booking Details Received</h3>
+        <p className="text-gray-600 mt-4">
+          We have received your details and sent a confirmation email to your inbox. Please check your inbox for further information.
+        </p>
+        <p className="text-gray-600 mt-4">
+          If anything is incorrect, we will verify your identity and send you a final confirmation email once everything is confirmed.
+        </p>
+        <p className="text-gray-600 mt-4">
+          Thank you for your patience. For more details, feel free to contact us at <a href="mailto:moosechalet@gmail.com" className="text-blue-500">moosechalet@gmail.com</a>.
+        </p>
+      </div>
+    </div>
+
+
+    </div>
+  );
+};
+
+

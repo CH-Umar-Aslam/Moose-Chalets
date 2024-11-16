@@ -102,7 +102,7 @@ export default function TestimonialSlider() {
                     alt={testimonial.name}
                     width={100}
                     height={100}
-                    className="rounded-full object-cover"
+                    className="rounded-full object-cover w-24 h-24"
                   />
                 </div>
                 <i className="text-lg font-semibold text-black">

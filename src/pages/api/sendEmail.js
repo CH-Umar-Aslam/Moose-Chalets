@@ -50,7 +50,7 @@ const handler = async (req, res) => {
       <p>Hello, my name is <strong>${name}</strong>. I can be reached at <strong>${phone}</strong>. My document number is <strong>${documentNumber}</strong>.</p>
       <p>Sender Message: ${message}</p>
       <p>I would like to pay by <strong>${paymentMethod}</strong>, and I will be traveling with <strong>${guestCount}</strong> guests, mattress ${
-          mattressOption ? " Compulsory" : "not needed"
+          mattressOption ? " needed " : "not needed"
         } The date of my reservation is <strong>${date}</strong>.</p>
       <p>Email: ${email}</p>
     </div>
@@ -79,9 +79,9 @@ const handler = async (req, res) => {
             <p><strong>Phone:</strong> ${phone}</p>
             <p><strong>Document Number:</strong> ${documentNumber}</p>
             <p><strong>Message:</strong> ${message}</p>
-            <p><strong>Payment Method:</strong> ${paymentMethod}</p>
+            <p><strong>Payment Mode:</strong> ${paymentMethod}</p>
             <p><strong>Guest Count:</strong> ${guestCount}</p>
-            <p><strong>Mattress Option:</strong> mattress${
+            <p><strong>Mattress :</strong> ${
               mattressOption || "not needed"
             }</p>
             <p><strong>Date:</strong> ${date}</p>

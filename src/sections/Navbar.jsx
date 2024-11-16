@@ -30,8 +30,8 @@ export default function Navbar() {
           href="#"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <span className="self-center font-Playball font-thin text-3xl whitespace-nowrap dark:text-white">
-            Moose Chalet
+          <span className="self-center font-Playball font-thin text-3xl whitespace-nowrap text-heading">
+            Moose Chalets
           </span>
         </Link>
 
@@ -138,11 +138,11 @@ export default function Navbar() {
               href="#"
               className="text-2xl font-Playball font-thin text-white"
             >
-              Moose Chalet
+              Moose Chalets
             </Link>
             <button
               onClick={toggleMenu}
-              className="hover:bg-gray-700 rounded p-2"
+              className="text-gray-300 rounded p-2"
             >
               <svg
                 className="w-5 h-5"

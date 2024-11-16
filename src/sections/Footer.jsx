@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { IoLocationSharp } from "react-icons/io5";
@@ -6,10 +7,17 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { TiSocialFacebook } from "react-icons/ti";
 import { SlSocialInstagram } from "react-icons/sl";
 import { FaWhatsapp } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
-  // 2297555a-df5e-4fa7-bca1-db8d82781251
-  //  b4a88e54-d1b9-4347-9fbe-4da3e31a9fd6
+  const scrollTo = (id) => {
+    const section = document.getElementById(id);
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div
@@ -33,10 +41,20 @@ const Footer = () => {
             Modern amenities and exceptional service, all designed to offer you
             a peaceful and memorable stay in the heart of nature.
           </p>
-          <div className="mt-6 flex text-xl space-x-4 ml-2">
-            <TiSocialFacebook />
-            <SlSocialInstagram />
-            <FaWhatsapp />
+          <div className="mt-6 flex text-xl space-x-2 ml-2">
+            <a
+              href="https://www.instagram.com/moosechalets?igsh=M2VxMzlxN3hrYzFj"
+              target="blank"
+            >
+              <SlSocialInstagram />
+            </a>
+            <a
+              href="https://www.facebook.com/MooseChaletsHunza?mibextid=ZbWKwL"
+              target="blank"
+            >
+              <TiSocialFacebook />
+            </a>
+           
           </div>
         </div>
 
@@ -45,11 +63,45 @@ const Footer = () => {
           <h2 className="text-lg border-l-[7px] p-[10px] border-[#19F745] font-semibold">
             Quick Links
           </h2>
-          <ul className="mt-4 ml-2 space-y-2 text-sm">
-            <li>Home</li>
-            <li>Rooms</li>
-            <li>Services</li>
-            <li>Contact Us</li>
+          <ul className="mt-4 ml-2 space-y-2 text-sm flex flex-col">
+            <Link
+              onClick={(e) => {
+                e.preventDefault();
+                scrollTo("hero-section");
+              }}
+              href="#"
+            >
+              Home
+            </Link>
+
+            <Link
+              onClick={(e) => {
+                e.preventDefault();
+                scrollTo("about");
+              }}
+              href="#"
+            >
+              About
+            </Link>
+
+            <Link
+              onClick={(e) => {
+                e.preventDefault();
+                scrollTo("services");
+              }}
+              href="#"
+            >
+              Services
+            </Link>
+            <Link
+              onClick={(e) => {
+                e.preventDefault();
+                scrollTo("testimonials");
+              }}
+              href="#"
+            >
+              Testimonials
+            </Link>
           </ul>
         </div>
 
@@ -60,20 +112,26 @@ const Footer = () => {
           </h2>
           <ul className="mt-4 ml-2 space-y-2 text-sm">
             <li className="flex items-center gap-2">
-              <FaPhoneAlt className="text-lg" /> +92-311-1122321
+              <FaPhoneAlt className="text-lg" /> +92 3124295679
             </li>
             <li className="flex items-center gap-2">
-              <CgMail className="text-lg" /> hunza.valley@gmail.com
+              <CgMail className="text-lg" />
+              moosechalet@gmail.com
             </li>
             <li className="flex items-center gap-2">
-              <IoLocationSharp className="text-lg" /> Bungalow no. 04, Tulsa
-              Road, Hunza Valley, 46602
+              <IoLocationSharp className="text-lg" />
+              karimabad, Hunza Valley
             </li>
           </ul>
         </div>
       </div>
-      <div className="bg-[#123a1a] border-t-2  opacity-95 text-center py-6 text-sm">
-        Copyright © 2024 Moose Chalet. All rights reserved.
+      <div className="bg-[#123a1a] border-t-2 opacity-95 text-center pt-6 text-sm">
+        Copyright © 2024 Moose Chalets. All rights reserved <br />
+        <div className="flex justify-center gap-1 mt-1  pb-3 ">
+          <p className="text-xs text-green-300 ">
+            Developed by <strong>Ch Umar Aslam</strong>
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ export default function Services() {
   return (
     <div
       id="services"
-      className="py-8 bg-sectionBackground container mx-auto px-2 font-Poppins  sm:px-6 lg:px-8"
+      className="py-8 bg-sectionBackground lg:container lg:mx-auto px-2 font-Poppins  sm:px-6 lg:px-8"
     >
       <div className="md:text-center max-w-7xl p-3 mx-auto">
         <h2 className="text-2xl  md:text-3xl font-extrabold tracking-tight text-heading sm:text-4xl">
@@ -103,7 +103,7 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="space-y-8 md:space-y-12 px-3  mt-24  font-Poppins">
+      <div className="space-y-4 md:space-y-12 px-3 mt-8 md:mt-24  font-Poppins">
         {/* section 1 */}
         <div>
           <div className="flex flex-col md:flex-row  gap-4 xl:gap-6">
@@ -113,12 +113,12 @@ export default function Services() {
                 width={1000}
                 height={1000}
                 alt="Mountain-Facing Room"
-                className="  w-full  h-[90%]  object-cover rounded-[20px]"
+                className="  w-full  h-[90%] my-6   object-cover rounded-[20px]"
               />
             </div>
 
             <div className="md:w-1/2 sm:p-4">
-              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[10px] p-2 md:p-4 xl:p-5 border-heading text-subHeading">
+              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[6px] p-2 md:p-4 xl:p-5 border-heading text-subHeading">
                 Mountain-Facing Rooms
               </h2>
               <p className="text-[14px]  md:text-base md:mt-5 lg:leading-[150%] lg:text-xl  pl-2 md:pl-5 text-paragraph mb-4 text-justify ">
@@ -141,7 +141,7 @@ export default function Services() {
         <div>
           <div className="flex flex-col-reverse md:flex-row  gap-4 xl:gap-6">
             <div className="md:w-1/2 sm:p-4">
-              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[10px] p-2 md:p-4 xl:p-5 border-heading text-subHeading">
+              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[6px] p-2 md:p-4 xl:p-5 border-heading text-subHeading">
                 Embrace Nature's Beauty
               </h2>
               <p className="text-[14px]  md:text-base md:mt-5 lg:leading-[150%] lg:text-xl  pl-2 md:pl-5 text-paragraph mb-4 text-justify ">
@@ -164,7 +164,7 @@ export default function Services() {
                 width={1000}
                 height={500}
                 alt="Mountain-Facing Room"
-                className="  w-full  h-[90%]  object-cover rounded-[20px]"
+                className="  w-full  h-[90%]  my-6  object-cover rounded-[20px]"
               />
             </div>
           </div>
@@ -178,12 +178,12 @@ export default function Services() {
                 width={1000}
                 height={1000}
                 alt="Mountain-Facing Room"
-                className="  w-full  h-[90%]  object-cover rounded-[20px]"
+                className="  w-full  h-[90%] my-6  object-cover rounded-[20px]"
               />
             </div>
 
             <div className="md:w-1/2 sm:p-4">
-              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[10px] p-2 md:p-4 xl:p-5 border-heading text-subHeading">
+              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[6px] p-2 md:p-4 xl:p-5 border-heading text-subHeading">
                 Savor Exquisite Cuisine
               </h2>
               <p className="text-[14px]  md:text-base md:mt-5 lg:leading-[150%] lg:text-xl  pl-2 md:pl-5 text-paragraph mb-4 text-justify ">
@@ -206,7 +206,7 @@ export default function Services() {
         <div>
           <div className="flex flex-col-reverse md:flex-row  gap-4 xl:gap-6">
             <div className="md:w-1/2 sm:p-4">
-              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[10px] p-2 md:p-4 xl:p-5 border-heading text-subHeading">
+              <h2 className=" text-2xl  md:text-3xl lg:text-4xl font-semibold md:font-bold  mb-3 sm:mb-4 border-l-[6px] p-2 md:p-4 xl:p-5 border-heading text-subHeading">
                 Pristine Cleanliness
               </h2>
               <p className="text-[14px]  md:text-base md:mt-5 lg:leading-[150%] lg:text-xl  pl-2 md:pl-5 text-paragraph mb-4 text-justify ">
@@ -230,7 +230,7 @@ export default function Services() {
                 width={1000}
                 height={1000}
                 alt="Mountain-Facing Room"
-                className="  w-full  h-[90%]  object-cover rounded-[20px]"
+                className="  w-full  h-[90%] my-6  object-cover rounded-[20px]"
               />
             </div>
           </div>

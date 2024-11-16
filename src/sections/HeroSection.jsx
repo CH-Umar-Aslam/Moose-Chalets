@@ -10,7 +10,7 @@ import Image from "next/image";
 const images = [
   {
     src: "/assets/image.png",
-    title: "Welcome to Moose Chalet",
+    title: "Welcome to Moose Chalets",
     description: "Experience the beauty of nature and luxury in one place.",
   },
   {

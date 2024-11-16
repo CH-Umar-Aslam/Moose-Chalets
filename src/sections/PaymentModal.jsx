@@ -25,7 +25,7 @@ const PaymentModal = ({ isOpen, onClose }) => {
           <p className="mt-4 text-sm text-gray-600">
             After you submit your booking, you will receive a confirmation
             email. If you do not receive it, please email us at{" "}
-            <strong>support@example.com</strong> with a screenshot of your
+            <strong>moosechalet@gmail.com</strong> with a screenshot of your
             payment. We will respond to you as soon as possible.
           </p>
           <button
