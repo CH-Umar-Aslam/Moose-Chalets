@@ -50,7 +50,7 @@ const handler = async (req, res) => {
       <p>Hello, my name is <strong>${name}</strong>. I can be reached at <strong>${phone}</strong>. My document number is <strong>${documentNumber}</strong>.</p>
       <p>Sender Message: ${message}</p>
       <p>I would like to pay by <strong>${paymentMethod}</strong>, and I will be traveling with <strong>${guestCount}</strong> guests, mattress ${
-          mattressOption ? mattressOption : "not needed"
+          mattressOption ? " Compulsory" : "not needed"
         } The date of my reservation is <strong>${date}</strong>.</p>
       <p>Email: ${email}</p>
     </div>
