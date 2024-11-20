@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import AboutSection from "../../public/assets/about-section.svg";
+import AboutSection from "../../public/assets/who-we-are.webp";
 const WhoWeAre = () => {
   return (
     <section className="bg-gray-100 ">
