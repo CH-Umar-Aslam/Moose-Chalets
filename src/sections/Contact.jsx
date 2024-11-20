@@ -24,10 +24,12 @@ const ContactForm = () => {
 
     if (message.length < 10) {
       alert("Message must be at least 10 characters long.");
+      setLoading(false)
       return;
     }
     if (!/^\d{5,}$/.test(documentNumber)) {
       alert("Document number must be at least 5 digits.");
+      setLoading(false)
       return;
     }
 
@@ -37,6 +39,7 @@ const ContactForm = () => {
 
     if (selectedDate < currentDate) {
       alert("Date must be today or in the future.");
+      setLoading(false)
       return;
     }
 
@@ -60,15 +63,17 @@ const ContactForm = () => {
       body: formData,
     });
 
-    setLoading(false);
+   
 
     if (response.status === 200) {
+      setLoading(false);
       setStatus(true);
       setTimeout(() => {
         setStatus(false);
-      }, 8000); // Close modal after 8 seconds
+      }, 12000); // Close modal after 8 seconds
     } else {
       alert("Something went wrong, please try again.");
+      setLoading(false);
     }
 
     setName("");
@@ -82,7 +87,7 @@ const ContactForm = () => {
     setGuestCount(1);
     setMattressOption("");
     setDate("");
-
+    setLoading(false);
     // Prepare email data
   };
 

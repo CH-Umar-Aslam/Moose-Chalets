@@ -15,11 +15,14 @@ const PaymentModal = ({ isOpen, onClose }) => {
             <h3 className="font-semibold">2. Bank Transfer</h3>
             <p>
               Please transfer the payment to the following account:
-              <strong> XYZ123456</strong>
+              {" "}
+              <br />
+              <strong>Account Title: Moose Chalet
+                <br />
+              IBAN:PK06MPBL0285027140144806</strong>
             </p>
-            <p>
-              After the transfer, please keep a screenshot of the payment for
-              your records.
+            <p className="">
+              After the transfer, please keep a screenshot of the payment and attach in booking form.
             </p>
           </div>
           <p className="mt-4 text-sm text-gray-600">

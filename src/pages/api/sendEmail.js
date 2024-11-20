@@ -41,7 +41,7 @@ const handler = async (req, res) => {
       // Prepare email options for admin
       const adminMailOptions = {
         from: process.env.EMAIL_USER,
-        to: "39988@students.riphah.edu.pk", // Change to your email address
+        to: "lubna.shamsher@gmail.com", // Change to your email address
         subject: subject || "New Inquiry Received",
         text: `Hello, my name is ${name}. I can be reached at ${phone}. My document number is ${documentNumber}. ${message} I would like to pay by ${paymentMethod}, and I will be traveling with ${guestCount} guests. ${mattressOption} The date of my reservation is ${date}.`,
         html: `

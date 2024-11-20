@@ -5,6 +5,7 @@ import serviceImage from "../../public/assets/room-service.svg";
 import waterImage from "../../public/assets/hot-water.svg";
 import ServicesImage1 from "../../public/assets/services-image1.jpeg";
 import ServicesImage2 from "../../public/assets/services-image2.jpeg";
+import servicesImage5 from "../../public/assets/img-services.jpeg"
 import ServicesImage4 from "../../public/assets/services-image4.svg";
 import Image from "next/image";
 
@@ -174,7 +175,7 @@ export default function Services() {
           <div className="flex flex-col md:flex-row  gap-4 xl:gap-6">
             <div className="md:w-1/2">
               <Image
-                src={ServicesImage1}
+                src={servicesImage5}
                 width={1000}
                 height={1000}
                 alt="Mountain-Facing Room"
